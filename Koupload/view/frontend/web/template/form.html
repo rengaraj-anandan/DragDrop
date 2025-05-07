@@ -1,0 +1,10 @@
+<div class="drop-area"
+     data-bind="event: {
+         drop: handleDrop,
+         dragover: handleDragOver,
+         dragleave: handleDragLeave
+     },
+     css: { 'dragging': isDragging }"
+     style="border: 2px dashed #ccc; padding: 50px; text-align: center;">
+    <p data-bind="text: isDragging() ? 'Release to upload files' : 'Drop your files here'"></p>
+</div>

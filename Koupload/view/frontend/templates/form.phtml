@@ -1,0 +1,21 @@
+
+<div>
+    <h2>Drag and Drop File Upload</h2>
+    <div data-bind="scope: 'kouploadForm'">
+        <!-- ko template: getTemplate() --><!-- /ko -->
+    </div>
+</div>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "kouploadForm": {
+                        "component": "Renga_Koupload/js/form"
+                    }
+                }
+            }
+        }
+    }
+</script>
